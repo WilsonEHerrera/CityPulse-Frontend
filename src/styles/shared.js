@@ -1,0 +1,66 @@
+export const tokens = {
+  border: "1px solid #e5e5e3",
+  radius: 10,
+  radiusSm: 6,
+  fontSans: "ui-sans-serif, system-ui, sans-serif",
+  fontMono: "ui-monospace, monospace",
+};
+
+export const sharedStyles = {
+  pill: {
+    fontSize: 10,
+    fontWeight: 700,
+    padding: "2px 7px",
+    borderRadius: 999,
+    fontFamily: "ui-sans-serif, system-ui, sans-serif",
+    letterSpacing: "0.04em",
+    textTransform: "uppercase",
+    backgroundColor: "#dbeafe",
+    color: "#1e40af",
+  },
+  card: {
+    border: "1px solid #e5e5e3",
+    borderRadius: 10,
+    padding: "16px 18px",
+    backgroundColor: "#ffffff",
+    display: "flex",
+    flexDirection: "column",
+    gap: 8,
+  },
+  sectionLabel: (urgente) => ({
+    fontSize: 11,
+    fontWeight: 700,
+    fontFamily: "ui-sans-serif, system-ui, sans-serif",
+    textTransform: "uppercase",
+    letterSpacing: "0.06em",
+    color: urgente ? "#dc2626" : "#a3a3a3",
+    marginBottom: 12,
+  }),
+  pageTitle: {
+    fontSize: 24,
+    fontWeight: 600,
+    letterSpacing: "-0.02em",
+    marginBottom: 6,
+  },
+  pageHeader: {
+    marginBottom: 28,
+    borderBottom: "1px solid #e5e5e3",
+    paddingBottom: 20,
+  },
+  muted: {
+    fontSize: 13,
+    color: "#737373",
+    fontFamily: "ui-sans-serif, system-ui, sans-serif",
+    lineHeight: 1.6,
+  },
+  spinner: {
+    display: "inline-block",
+    width: 13,
+    height: 13,
+    border: "2px solid #e5e5e3",
+    borderTopColor: "#1a1a1a",
+    borderRadius: "50%",
+    animation: "spin 0.7s linear infinite",
+    flexShrink: 0,
+  },
+};
